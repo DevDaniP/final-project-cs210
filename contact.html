@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Danielle Davis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="theme-btn">Toggle Dark Mode</button>
+  </div>
+
+  <header>
+    <nav class="nav-bar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="site-header">
+      <h1>Get In Touch</h1>
+      <p>I'd Love to Hear From You</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <h2>Contact Me</h2>
+      <p style="text-align: center; margin-bottom: 30px;">
+        Feel free to reach out if you'd like to connect or discuss potential opportunities!
+      </p>
+
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+
+      <div style="margin-top: 40px; text-align: center;">
+        <h3>Connect With Me</h3>
+        <p>
+          <a href="https://www.linkedin.com/in/danielle-davis-peterson" target="_blank" 
+             style="color: var(--accent-color); margin: 0 10px;">LinkedIn</a> | 
+          <a href="https://github.com/DevDaniP" target="_blank" 
+             style="color: var(--accent-color); margin: 0 10px;">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const themeBtn = document.getElementById('theme-btn');
+    
+    themeBtn.addEventListener('click', function() {
+      if (document.body.hasAttribute('data-theme')) {
+        document.body.removeAttribute('data-theme');
+      } else {
+        document.body.setAttribute('data-theme', 'dark');
+      }
+    });
+
+    // Simple form validation (still learning JavaScript!)
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thanks for your message! (Note: This form is not actually connected to anything yet - still learning!)');
+    });
+  </script>
+</body>
+</html>

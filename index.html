@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danielle Davis - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Theme toggle button -->
+  <div class="theme-toggle">
+    <button id="theme-btn">Toggle Dark Mode</button>
+  </div>
+
+  <header>
+    <!-- Navigation bar like Tea Shop assignment -->
+    <nav class="nav-bar">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="https://www.linkedin.com/in/danielle-davis-peterson" target="_blank">LinkedIn</a>
+      <a href="https://github.com/DevDaniP" target="_blank">GitHub</a>
+    </nav>
+
+    <div class="site-header">
+      <h1>Danielle Davis</h1>
+      <p>Computer Science Student & Data Analyst</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="home-intro">
+      <img src="images/danielle 2025 smaller.png" alt="Photo of Danielle Davis" class="profile-pic">
+      
+      <div class="intro-text">
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+          Hi! I'm a computer science student at Southern Oregon University. 
+          I'm passionate about coding, data analysis, and solving problems with technology.
+        </p>
+        <p>
+          This website showcases some of my projects and tells you a bit about me. 
+          Feel free to explore and check out my work!
+        </p>
+        <p>
+          <strong>Skills:</strong> Python, SQL, HTML/CSS, Data Analysis
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Simple dark mode toggle
+    const themeBtn = document.getElementById('theme-btn');
+    
+    themeBtn.addEventListener('click', function() {
+      if (document.body.hasAttribute('data-theme')) {
+        document.body.removeAttribute('data-theme');
+      } else {
+        document.body.setAttribute('data-theme', 'dark');
+      }
+    });
+  </script>
+</body>
+</html>

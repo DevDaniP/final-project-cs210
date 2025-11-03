@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Danielle Davis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="theme-btn">Toggle Dark Mode</button>
+  </div>
+
+  <header>
+    <nav class="nav-bar">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Me</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="site-header">
+      <h1>About Me</h1>
+      <p>My Journey into Tech</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-content">
+      <h2>Hi, I'm Danielle</h2>
+      <p>
+        I'm a computer science student at Southern Oregon University with a passion for 
+        technology and problem-solving. After working in various fields for 15 years, 
+        I decided to go back to school to pursue my interest in computers and data.
+      </p>
+
+      <p>
+        Currently, I work as an IT Analyst on campus while completing my degree. 
+        I love learning new programming languages and finding ways to use data to 
+        solve real-world problems.
+      </p>
+
+      <h2>My Education</h2>
+      <p>
+        <strong>Southern Oregon University</strong><br>
+        BS in Computer Science<br>
+        Expected Graduation: 2026<br>
+        GPA: 3.91
+      </p>
+
+      <h2>What I'm Learning</h2>
+      <ul>
+        <li>Programming in Python, C++, and R</li>
+        <li>Database management with SQL</li>
+        <li>Web development (HTML, CSS, JavaScript)</li>
+        <li>Data analysis and visualization</li>
+        <li>Software engineering principles</li>
+      </ul>
+
+      <h2>My Interests</h2>
+      <p>
+        When I'm not coding, I enjoy hiking around Ashland, Oregon, learning about 
+        new technologies, and working on personal projects. I'm especially interested 
+        in data science and how we can use data to make better decisions.
+      </p>
+
+      <p>
+        I'm always looking for opportunities to learn and grow. If you'd like to 
+        connect, feel free to reach out through the contact page!
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const themeBtn = document.getElementById('theme-btn');
+    
+    themeBtn.addEventListener('click', function() {
+      if (document.body.hasAttribute('data-theme')) {
+        document.body.removeAttribute('data-theme');
+      } else {
+        document.body.setAttribute('data-theme', 'dark');
+      }
+    });
+  </script>
+</body>
+</html>

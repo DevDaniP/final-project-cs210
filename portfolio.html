@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Danielle Davis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="theme-btn">Toggle Dark Mode</button>
+  </div>
+
+  <header>
+    <nav class="nav-bar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="site-header">
+      <h1>My Portfolio</h1>
+      <p>Projects I've Been Working On</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="portfolio-intro">
+      <p>Here are some coding projects I've completed for my classes and on my own time.</p>
+    </section>
+
+    <section class="projects">
+      
+      <!-- Project 1 -->
+      <article class="project-card">
+        <h3>SQL Data Cleaning Project</h3>
+        <p>
+          I worked with a dataset of company layoffs and used SQL to clean the data. 
+          This involved removing duplicates, fixing inconsistent formatting, and 
+          handling missing values. Then I created some visualizations in Tableau.
+        </p>
+        <p><strong>Technologies used:</strong> SQL, MySQL, Tableau</p>
+        <div class="project-links">
+          <a href="https://github.com/DevDaniP" target="_blank">View on GitHub</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <h3>Text Adventure Game</h3>
+        <p>
+          A simple text-based adventure game I made in Python. The player can make 
+          choices and the game uses dice rolls to determine outcomes. I'm learning 
+          about object-oriented programming through this project.
+        </p>
+        <p><strong>Technologies used:</strong> Python</p>
+        <div class="project-links">
+          <a href="https://github.com/DevDaniP" target="_blank">View on GitHub</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <h3>Personal Website (This Site!)</h3>
+        <p>
+          This portfolio website showcases what I've learned in my web development 
+          class. I used HTML for structure, CSS for styling, and added a dark mode 
+          toggle with JavaScript.
+        </p>
+        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
+        <div class="project-links">
+          <a href="index.html">You're looking at it!</a>
+        </div>
+      </article>
+
+      <!-- Project 4 - placeholder -->
+      <article class="project-card">
+        <h3>Data Analysis Project (In Progress)</h3>
+        <p>
+          Currently working on analyzing NBA schedule data using R. Looking at how 
+          travel and rest days affect team performance. Still learning R so this 
+          one is taking me some time!
+        </p>
+        <p><strong>Technologies used:</strong> R, Statistics</p>
+        <div class="project-links">
+          <a href="#" style="opacity: 0.5; pointer-events: none;">Coming Soon</a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <script>
+    const themeBtn = document.getElementById('theme-btn');
+    
+    themeBtn.addEventListener('click', function() {
+      if (document.body.hasAttribute('data-theme')) {
+        document.body.removeAttribute('data-theme');
+      } else {
+        document.body.setAttribute('data-theme', 'dark');
+      }
+    });
+  </script>
+</body>
+</html>
